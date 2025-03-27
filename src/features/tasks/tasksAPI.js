@@ -4,7 +4,7 @@ const API_URL = "https://jsonplaceholder.typicode.com/todos";
 
 export const fetchTasksAPI = async () => {
   const response = await axios.get(API_URL);
-  return response.data.slice(0, 10); // Limit to 10 tasks
+  return response.data.slice(0, 10);
 };
 
 export const addTaskAPI = async (title) => {
@@ -13,7 +13,7 @@ export const addTaskAPI = async (title) => {
     completed: false,
     userId: 1,
   });
-  return { ...response.data, id: Date.now() }; // Use local ID
+  return { ...response.data, id: Date.now() };
 };
 
 export const updateTaskAPI = async (task) => {

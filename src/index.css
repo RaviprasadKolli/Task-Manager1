@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 20px;
   font-family: sans-serif;
-  background-color: white; /* Force white background */
+  background-color: white;
 }
 
 #root {
